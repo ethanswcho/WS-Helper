@@ -1,0 +1,31 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "name": "ws-helper",
+  "version": "1.0.0",
+  "main": "converter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "temp": "webpack serve",
+    "dev": "concurrently \"tsc ./src/index.ts -w\" \"webpack serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12",
+    "commonjs": "^0.0.1",
+    "express": "^4.19.2",
+    "puppeteer": "^22.8.0"
+  }
+}
